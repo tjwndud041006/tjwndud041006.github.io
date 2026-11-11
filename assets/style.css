@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400..800&display=swap');
 
 /* Soft lavender gradients over near-white research-focused surfaces. */
-:root{color-scheme:light;--page:#fff;--surface:#fff;--ink:#241d3b;--muted:#6a6385;--accent:#6b4fd6;--accent-hover:#5136b5;--wash:#f2edff;--wash-strong:#ddd0ff;--line:#e8e2f6;--header:rgba(255,255,255,.92);--shadow:0 12px 36px rgba(92,64,170,.08);--blue-gradient:linear-gradient(115deg,#8a6cf0 0%,#a78bf6 55%,#c9a8f4 100%);--title-gradient:linear-gradient(110deg,#4b32a8 0%,#7656dc 60%,#a27ce6 100%);--soft-gradient:linear-gradient(110deg,#f4efff 0%,#f9f6ff 56%,#f7f0fd 100%);--soft-hover:linear-gradient(110deg,#ece4ff 0%,#f3eeff 56%,#f2e8fc 100%);--photo-gradient:linear-gradient(140deg,#c9b6fb 0%,#e0d4fc 50%,#f1dcf6 100%);--feature-gradient:linear-gradient(115deg,#f5f0ff 0%,#fbf9ff 70%,#f8f1fd 100%);--panel-border:#e2d9f7;--soft-border:#cfc1f3;--selection:#e3d8ff}
-html[data-theme=dark]{color-scheme:dark;--page:#14111d;--surface:#1c1828;--ink:#ebe7f6;--muted:#aaa2c2;--accent:#bea9ff;--accent-hover:#ddd1ff;--wash:#272040;--wash-strong:#3a2e63;--line:#2f2942;--header:rgba(20,17,29,.92);--shadow:0 12px 36px rgba(0,0,0,.18);--title-gradient:linear-gradient(110deg,#d6c8ff 0%,#bba3ff 60%,#e3c3f7 100%);--soft-gradient:linear-gradient(110deg,#221c35 0%,#1f1a30 56%,#251b31 100%);--soft-hover:linear-gradient(110deg,#2a2241 0%,#251f39 56%,#2d213b 100%);--photo-gradient:linear-gradient(140deg,#4a3a85 0%,#3d3266 50%,#55396a 100%);--feature-gradient:linear-gradient(115deg,#211b33 0%,#1d1829 70%,#241a30 100%);--panel-border:#3a3252;--soft-border:#4a3f6a;--selection:#3a2e63}
+:root{color-scheme:light;--page:#fff;--surface:#fff;--ink:#241d3b;--muted:#6a6385;--accent:#6b4fd6;--accent-hover:#5136b5;--wash:#f2edff;--wash-strong:#ddd0ff;--line:#e8e2f6;--header:rgba(255,255,255,.92);--shadow:0 12px 36px rgba(92,64,170,.08);--blue-gradient:linear-gradient(115deg,#8a6cf0 0%,#a78bf6 55%,#c9a8f4 100%);--title-gradient:linear-gradient(110deg,#4b32a8 0%,#7656dc 60%,#a27ce6 100%);--soft-gradient:linear-gradient(110deg,#f4efff 0%,#f9f6ff 56%,#f7f0fd 100%);--soft-hover:linear-gradient(110deg,#ece4ff 0%,#f3eeff 56%,#f2e8fc 100%);--photo-gradient:linear-gradient(140deg,#c9b6fb 0%,#e0d4fc 50%,#f1dcf6 100%);--feature-gradient:linear-gradient(115deg,#f5f0ff 0%,#fbf9ff 70%,#f8f1fd 100%);--panel-border:#e2d9f7;--soft-border:#cfc1f3;--card-border:#bda9ee;--selection:#e3d8ff}
+html[data-theme=dark]{color-scheme:dark;--page:#14111d;--surface:#1c1828;--ink:#ebe7f6;--muted:#aaa2c2;--accent:#bea9ff;--accent-hover:#ddd1ff;--wash:#272040;--wash-strong:#3a2e63;--line:#2f2942;--header:rgba(20,17,29,.92);--shadow:0 12px 36px rgba(0,0,0,.18);--title-gradient:linear-gradient(110deg,#d6c8ff 0%,#bba3ff 60%,#e3c3f7 100%);--soft-gradient:linear-gradient(110deg,#221c35 0%,#1f1a30 56%,#251b31 100%);--soft-hover:linear-gradient(110deg,#2a2241 0%,#251f39 56%,#2d213b 100%);--photo-gradient:linear-gradient(140deg,#4a3a85 0%,#3d3266 50%,#55396a 100%);--feature-gradient:linear-gradient(115deg,#211b33 0%,#1d1829 70%,#241a30 100%);--panel-border:#3a3252;--soft-border:#4a3f6a;--card-border:#5d4f8a;--selection:#3a2e63}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:104px}
 body{margin:0;background:var(--page);color:var(--ink);font-family:'Nunito',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
@@ -286,9 +286,9 @@ body{background:var(--page)}
 .paper-visual{border-radius:12px}
 
 /* Projects: two-column cards. */
-#projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 24px}
 #projects>.section-heading{grid-column:1/-1;margin-bottom:0}
-#projects .project{align-items:start;border:1px solid var(--soft-border);border-radius:14px;padding:18px 20px;background:var(--surface);overflow:hidden}
+#projects .project{align-items:start;border:1px solid var(--card-border);border-radius:14px;padding:18px 20px;background:var(--surface);overflow:hidden}
 #projects .project + .project{margin-top:0;border-top:0;padding-top:18px}
 #projects .project-meta{flex-direction:column;align-items:flex-start;gap:8px}
 
