@@ -32,7 +32,7 @@ strong{font-weight:650}::selection{background:var(--selection);color:var(--ink)}
 .hero-gpa,.hero-award{font-size:14px;color:var(--muted);line-height:1.7}
 .hero-gpa{margin-top:8px}.hero-award{margin-top:2px}
 .hero-gpa strong,.hero-award strong{color:var(--ink);font-weight:700}
-.intro{grid-column:1/-1;max-width:none;margin-top:18px;font-size:15.5px;line-height:1.8}.intro p+p{margin-top:8px}.intro strong{font-weight:600;color:var(--ink)}
+.intro{grid-column:1/-1;max-width:none;margin-top:18px;font-size:15px;line-height:1.8}.intro p+p{margin-top:8px}.intro strong{font-weight:600;color:var(--ink)}
 .socials{display:flex;gap:7px 18px;flex-wrap:wrap;margin-top:14px}
 .social-link{font-size:14px;line-height:1.5;display:inline-flex;align-items:center;gap:6px;color:var(--ink)}
 .social-link:hover{color:var(--accent);text-decoration:underline;text-underline-offset:4px}.social-link svg{width:15px;height:15px;flex-shrink:0;color:var(--accent)}
@@ -85,7 +85,7 @@ strong{font-weight:650}::selection{background:var(--selection);color:var(--ink)}
 .project img{height:150px;width:100%;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:9px;padding:12px}
 .project h3{margin:6px 0 9px;font-size:17px}.project p{font-size:14px;color:var(--muted);line-height:1.8}
 .project-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 12px;margin-bottom:10px}
-.project-period{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:0 4px;padding:5px 10px;border:1px solid var(--panel-border);border-radius:6px;background:var(--soft-gradient);color:var(--accent);font-size:12px;font-weight:700;line-height:1.6;font-variant-numeric:tabular-nums}
+.project-period{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:0 4px;padding:5px 10px;border:1px solid var(--soft-border);border-radius:6px;background:var(--surface);color:var(--accent);font-size:12px;font-weight:700;line-height:1.6;font-variant-numeric:tabular-nums}
 .period-label{font-size:12px;font-weight:500;color:var(--muted);margin-right:5px}
 .project h3{margin:0 0 5px}
 .project .project-translation{font-size:11px;line-height:1.6}
@@ -228,7 +228,7 @@ html{scroll-padding-top:118px}.page-wrap{width:calc(100% - 38px)}
   .hero{grid-template-columns:240px minmax(0,1fr);column-gap:30px;padding-top:22px}
   .hero-copy{align-self:start}
   .hero .portrait{align-self:center}
-  .hero .intro{margin-top:15px;font-size:15px;line-height:1.75}
+  .hero .intro{margin-top:15px;font-size:14.5px;line-height:1.75}
   .hero .intro h2{font-size:18px;margin-bottom:6px}
   .hero .intro p+p{margin-top:7px}
   .hero .socials{margin-top:14px}
