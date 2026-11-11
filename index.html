@@ -30,6 +30,10 @@
     <div class="hero-title">
       <h1 id="name">Juyoung Seo</h1>
       <p class="affiliation">Undergraduate Researcher · <a href="https://www.skku.edu/eng/">Sungkyunkwan University</a><br>Software Laboratory (SW Lab) <span class="profile-location">· Seoul, Korea</span></p>
+      <div class="credentials">
+        <p class="hero-gpa"><span class="cred-key">GPA</span> <b>4.37</b>/4.5 (Computer Education) · <b>4.39</b>/4.5 (Computational Statistics)</p>
+        <p class="hero-award"><strong>Korean Presidential Science Scholarship</strong> (2023 – present) · Top <b>0.06%</b> nationwide</p>
+      </div>
     </div>
   <section class="intro" aria-labelledby="about-title">
       <h2 id="about-title">About Me</h2>
@@ -51,7 +55,8 @@
 <section class="section" id="news" aria-labelledby="news-title">
   <div class="section-heading"><h2 id="news-title">News &amp; Updates</h2><span class="section-note">A few recent updates</span></div>
   <ul class="news-list" id="news-list">
-    <li><time datetime="2026-10">2026.10</time><p><span class="new-label">NEW</span>Received the <strong>Encouragement Prize</strong> at the AI-EDU Next Class Hackathon hosted by KOFAC.</p></li>
+    <li><time datetime="2026-11">2026.11</time><p><span class="new-label">NEW</span><strong>Whose Fairness? Auditing Exposure Fairness When AI Agents Read Rankings</strong> was accepted at <strong>WSDM 2027</strong>.</p></li>
+    <li><time datetime="2026-10">2026.10</time><p>Received the <strong>Encouragement Prize</strong> at the AI-EDU Next Class Hackathon hosted by KOFAC.</p></li>
     <li><time datetime="2026-09">2026.09</time><p>Two papers on <strong>forensic anomaly calibration</strong> and <strong>LLM-assisted digital forensics</strong> are under review at DFC Europe 2027.</p></li>
     <li><time datetime="2026-08">2026.08</time><p>Won two <strong>Gold Prizes</strong>, at the AICOSS Deep Learning Bootcamp Competition and the ANCHOR AI Launchpad Hackathon.</p></li>
     <li><time datetime="2026-07">2026.07</time><p>Joined a national R&amp;D project on <strong>AI profiling for cyber incident analysis</strong>.</p></li>
@@ -63,10 +68,42 @@
 
 <section class="section" id="publications" aria-labelledby="publications-title">
   <div class="section-heading"><h2 id="publications-title">Publications</h2><span class="section-note">Conference papers &amp; preprints</span></div>
-  <h3 class="publication-year">Under review</h3>
+  <h3 class="publication-year">2027</h3>
   <div class="pub-list">
     <article class="publication">
-      <div class="paper-visual paper-visual--text" aria-hidden="true"><span>ACL<br>ARR</span></div>
+      <div class="paper-visual"><a href="projects/whose-fairness-wsdm2027.pdf" aria-label="Open the PDF"><img src="images/wsdm-agent-fairness.png" alt="Overview: human and AI-agent examination curves turn one exposure vector into a set, exposure deviations become intervals per provider, and a single linear program yields a robust ranking policy" width="1600" height="639" loading="lazy"></a></div>
+      <div>
+        <div class="paper-meta"><span class="venue">WSDM 2027</span><span>Conference paper</span></div>
+        <h3><a href="projects/whose-fairness-wsdm2027.pdf">Whose Fairness? Auditing Exposure Fairness When AI Agents Read Rankings</a></h3>
+        <p class="authors"><strong>Juyoung Seo</strong>, et al.</p>
+      </div>
+    </article>
+  </div>
+
+  <h3 class="publication-year publication-year--next">2026</h3>
+  <div class="pub-list">
+    <article class="publication">
+      <div class="paper-visual"><a href="projects/reforest-pakdd2026.pdf" aria-label="Open the PDF"><div class="paper-slides" data-interval="4500"><img src="images/reforest-architecture.png" alt="Architecture: adaptive statistical screening with an isolation forest, path-aware semantic extraction, LLM semantic reasoning, and an uncertainty-aware dynamic ensemble producing the final prediction" width="1600" height="592" loading="lazy"><img src="images/pakdd-team-hongkong.jpg" alt="The authors presenting ReForest at PAKDD 2026 in Hong Kong" width="955" height="636" loading="lazy"></div></a></div>
+      <div>
+        <div class="paper-meta"><span class="venue">PAKDD 2026</span><span>Conference paper</span></div>
+        <h3><a href="projects/reforest-pakdd2026.pdf">ReForest: Interpretability Meets Reasoning in Isolation Forest</a></h3>
+        <p class="authors"><strong>Juyoung Seo</strong>, Geonwoo Bang, Dongho Kim, Moohong Min</p>
+      </div>
+    </article>
+    <article class="publication">
+      <div class="paper-visual"><img src="images/keeping-user-text.png" alt="Pipeline: item profiles built from raw review texts with TF-IDF and truncated SVD, content similarity scored against a user’s recent interactions, then blended with the backbone score into a reranked list" width="1600" height="483" loading="lazy"></div>
+      <div>
+        <div class="paper-meta"><span class="venue">arXiv 2026</span><span>Preprint</span></div>
+        <h3>Keeping User-Generated Text In-House: Reducing Third-Party Review Processing for Frozen Sequential Recommenders</h3>
+        <p class="authors"><strong>Juyoung Seo</strong>, et al.</p>
+      </div>
+    </article>
+  </div>
+
+  <h3 class="publication-year publication-year--next">Under review</h3>
+  <div class="pub-list">
+    <article class="publication">
+      <div class="paper-visual"><img src="images/acl-llm-tutor.png" alt="Overview: a student record and ten candidate problems go into two LLM calls, a belief call and a recommendation call, whose picks are compared against real success rates across ability quintiles" width="956" height="327" loading="lazy"></div>
       <div>
         <div class="paper-meta"><span class="venue">ACL ARR</span><span>Under review</span></div>
         <h3>Accurate on Average, Blind to the Student: How LLM Tutors (Fail to) Personalize Practice</h3>
@@ -83,7 +120,7 @@
       </div>
     </article>
     <article class="publication">
-      <div class="paper-visual paper-visual--text" aria-hidden="true"><span>DFC<br>Europe</span></div>
+      <div class="paper-visual"><img src="images/caution-not-discrimination.png" alt="Overview: controlled evidence conditions built from disk images, LLM inference under three prompting arms, and an evidential boundary analysis separating evidence type from its link to the target" width="942" height="401" loading="lazy"></div>
       <div>
         <div class="paper-meta"><span class="venue">DFC Europe 2027</span><span>Under review</span></div>
         <h3>Caution Is Not Discrimination: Measuring Inferential Overreach in LLM-Assisted Digital Forensics</h3>
@@ -91,40 +128,13 @@
         <p class="paper-description"><strong class="tldr-label">TL;DR</strong> LLMs cite genuine forensic evidence yet assert activity it does not support. We separate the kind of evidence from its relation to the record, and show that generic caution suppresses supported conclusions rather than teaching models to discriminate.</p>
       </div>
     </article>
-    <article class="publication">
-      <div class="paper-visual paper-visual--text" aria-hidden="true"><span>WSDM<br>2027</span></div>
-      <div>
-        <div class="paper-meta"><span class="venue">WSDM 2027</span><span>Under review</span></div>
-        <h3>Whose Fairness? Auditing Exposure Fairness When AI Agents Read Rankings</h3>
-        <p class="authors"><strong>Juyoung Seo</strong>, et al.</p>
-      </div>
-    </article>
-  </div>
-
-  <h3 class="publication-year publication-year--next">2026</h3>
-  <div class="pub-list">
-    <article class="publication">
-      <div class="paper-visual paper-visual--text" aria-hidden="true"><span>PAKDD<br>2026</span></div>
-      <div>
-        <div class="paper-meta"><span class="venue">PAKDD 2026</span><span>Conference paper</span></div>
-        <h3>ReForest: Interpretability Meets Reasoning in Isolation Forest</h3>
-        <p class="authors"><strong>Juyoung Seo</strong>, Geonwoo Bang, Dongho Kim, Moohong Min</p>
-      </div>
-    </article>
-    <article class="publication">
-      <div class="paper-visual paper-visual--text" aria-hidden="true"><span>arXiv<br>2026</span></div>
-      <div>
-        <div class="paper-meta"><span class="venue">arXiv 2026</span><span>Preprint</span></div>
-        <h3>Keeping User-Generated Text In-House: Reducing Third-Party Review Processing for Frozen Sequential Recommenders</h3>
-        <p class="authors"><strong>Juyoung Seo</strong>, et al.</p>
-      </div>
-    </article>
   </div>
 </section>
 
 <section class="section" id="projects" aria-labelledby="projects-title">
-  <div class="section-heading"><h2 id="projects-title">Projects</h2><span class="section-note">Award-winning team projects</span></div>
-  <article class="project project--text">
+  <div class="section-heading"><h2 id="projects-title">Projects</h2><span class="section-note">Team projects &amp; teaching materials</span></div>
+  <article class="project">
+    <a class="project-image-link deck" href="projects/visual-reasoning-segmentation.pdf" aria-label="Open the slide deck (PDF)"><span class="deck-pages"><img src="images/decks/vrs-1.jpg" alt="Title slide: From Visual Recognition to Reasoning Segmentation" width="1280" height="720" loading="lazy"><img src="images/decks/vrs-2.jpg" alt="Task 1 overview: store-image visual question answering" width="1280" height="720" loading="lazy"><img src="images/decks/vrs-3.jpg" alt="The full training-free pipeline, from backbone to dual-path reasoning and the referee" width="1280" height="720" loading="lazy"><img src="images/decks/vrs-4.jpg" alt="Task 2 overview: a reasoning segmentation example, before and after" width="1280" height="720" loading="lazy"><img src="images/decks/vrs-5.jpg" alt="Results and ablations from the competition runs" width="1280" height="720" loading="lazy"></span><span class="deck-count">5 slides</span></a>
     <div class="project-body">
       <div class="project-meta"><span class="venue">Gold Prize · AICOSS / UOS</span><span class="project-period"><span class="period-label">Team Leader</span><time datetime="2026-08">Aug 2026</time></span></div>
       <h3>From Visual Recognition to Reasoning Segmentation</h3>
@@ -132,7 +142,8 @@
       <p class="project-focus">Vision-Language Models · VQA · Segmentation</p>
     </div>
   </article>
-  <article class="project project--text">
+  <article class="project">
+    <a class="project-image-link deck" href="projects/ongallog.pdf" aria-label="Open the slide deck (PDF)"><span class="deck-pages"><img src="images/decks/ongallog-1.jpg" alt="Title slide: Ongallog" width="1280" height="720" loading="lazy"><img src="images/decks/ongallog-2.jpg" alt="The proposed service: home-camera events linked to verified infant-care guidelines" width="1280" height="720" loading="lazy"><img src="images/decks/ongallog-3.jpg" alt="System architecture, from on-device video analysis to the dual-RAG engine and reports" width="1280" height="720" loading="lazy"><img src="images/decks/ongallog-4.jpg" alt="The working prototype on a phone" width="1280" height="720" loading="lazy"></span><span class="deck-count">4 slides</span></a>
     <div class="project-body">
       <div class="project-meta"><span class="venue">Gold Prize · SKKU ANCHOR &amp; FastCampus</span><span class="project-period"><span class="period-label">Team Leader</span><time datetime="2026-08">Aug 2026</time></span></div>
       <h3>Ongallog: AI Parenting Coaching Software for Home Cameras</h3>
@@ -140,7 +151,26 @@
       <p class="project-focus">RAG · On-Device AI · Privacy</p>
     </div>
   </article>
-  <article class="project project--text">
+  <article class="project">
+    <a class="project-image-link deck" href="projects/ml-with-data-pokemon.pdf" aria-label="Open the slide deck (PDF)"><span class="deck-pages"><img src="images/decks/pokemon-1.jpg" alt="Title slide: Machine Learning Through Data, a lesson for first-year high school students" width="1280" height="720" loading="lazy"><img src="images/decks/pokemon-2.jpg" alt="The Complete Pokemon Dataset on Kaggle, introduced as the data for the lesson" width="1280" height="720" loading="lazy"><img src="images/decks/pokemon-3.jpg" alt="The hands-on task: predicting a Pokemon’s weight from its height" width="1280" height="720" loading="lazy"><img src="images/decks/pokemon-4.jpg" alt="Revealing the fitted regression line and its mean squared error" width="1280" height="720" loading="lazy"><img src="images/decks/pokemon-5.jpg" alt="Overfitting and underfitting explained with three fitted curves" width="1280" height="720" loading="lazy"></span><span class="deck-count">5 slides</span></a>
+    <div class="project-body">
+      <div class="project-meta"><span class="venue">Lesson · Sunrin Internet High School</span><span class="project-period"><span class="period-label">Student Teacher</span><time datetime="2026-05">May 2026</time></span></div>
+      <h3>Machine Learning Through Data: Predicting Pokémon Stats</h3>
+      <p class="project-summary">A lesson that teaches supervised learning to first-year high school students through linear regression on a Pokémon dataset. Students fit a line by hand in a browser tool, compare their mean squared error against the least-squares fit, and arrive at train-test splitting and overfitting from their own results.</p>
+      <p class="project-focus">Teaching · Linear Regression · Data Literacy</p>
+    </div>
+  </article>
+  <article class="project">
+    <a class="project-image-link deck" href="projects/data-analysis-ai-basics-lab.pdf" aria-label="Open the slide deck (PDF)"><span class="deck-pages"><img src="images/decks/manus-1.jpg" alt="Title slide: building your own study-tool website with an AI agent" width="1280" height="720" loading="lazy"><img src="images/decks/manus-2.jpg" alt="The seven capabilities of the agent covered in the session" width="1280" height="720" loading="lazy"><img src="images/decks/manus-3.jpg" alt="Web App Builder: creating a site without writing code, in four steps" width="1280" height="720" loading="lazy"><img src="images/decks/manus-4.jpg" alt="Worked examples of a tool to build for each student’s own major" width="1280" height="720" loading="lazy"><img src="images/decks/manus-5.jpg" alt="The lab assignment and its grading criteria" width="1280" height="720" loading="lazy"></span><span class="deck-count">5 slides</span></a>
+    <div class="project-body">
+      <div class="project-meta"><span class="venue">Lab material · Sungkyunkwan University</span><span class="project-period"><span class="period-label">Teaching Assistant</span><time datetime="2026-03">Spring 2026</time></span></div>
+      <h3>Build Your Own Study Tool: An AI Agent Lab for Data Analysis and AI Basics</h3>
+      <p class="project-summary">Lab material I wrote for a university-wide course of about 505 students. Students use an autonomous AI agent to build an interactive web page that explains a difficult concept from their own major, with worked examples per department and a rubric tying the grade to the prompt, the artifact, and the published link.</p>
+      <p class="project-focus">Teaching · AI Agents · Course Material</p>
+    </div>
+  </article>
+  <article class="project">
+    <a class="project-image-link deck" href="projects/thuree.pdf" aria-label="Open the slide deck (PDF)"><span class="deck-pages"><img src="images/decks/thuree-1.jpg" alt="Title slide: THUREE" width="1280" height="720" loading="lazy"><img src="images/decks/thuree-2.jpg" alt="The approach: representing a document as a tree data structure" width="1280" height="720" loading="lazy"><img src="images/decks/thuree-3.jpg" alt="System architecture across preparation, indexing and query verification" width="1280" height="720" loading="lazy"><img src="images/decks/thuree-4.jpg" alt="Phase 2: bottom-up map-reduce indexing of the document tree" width="1280" height="720" loading="lazy"><img src="images/decks/thuree-5.jpg" alt="Ablation study comparing F1, evidence accuracy and LLM score" width="1280" height="720" loading="lazy"></span><span class="deck-count">5 slides</span></a>
     <div class="project-body">
       <div class="project-meta"><span class="venue">Grand Prize · AICOSS-THU &amp; DASU</span><span class="project-period"><span class="period-label">Team Leader</span><time datetime="2026-02">Feb 2026</time></span></div>
       <h3>THUREE: Structure-Aware LLM System for Large-Document QA</h3>
@@ -148,7 +178,8 @@
       <p class="project-focus">LLM Systems · Document QA</p>
     </div>
   </article>
-  <article class="project project--text">
+  <article class="project">
+    <a class="project-image-link deck" href="projects/drawmind.pdf" aria-label="Open the slide deck (PDF)"><span class="deck-pages"><img src="images/decks/drawmind-1.jpg" alt="Title slide: DrawMind" width="1280" height="720" loading="lazy"><img src="images/decks/drawmind-2.jpg" alt="The service: a generative-AI drawing-based psychological assessment" width="1280" height="720" loading="lazy"><img src="images/decks/drawmind-3.jpg" alt="Gamified drawing entities generated for each stage of the adventure" width="1280" height="720" loading="lazy"><img src="images/decks/drawmind-4.jpg" alt="Clinical drawing-assessment literature mapped to each in-game task" width="1280" height="720" loading="lazy"><img src="images/decks/drawmind-5.jpg" alt="Development architecture of the deployed service" width="1280" height="720" loading="lazy"></span><span class="deck-count">5 slides</span></a>
     <div class="project-body">
       <div class="project-meta"><span class="venue">Gold Prize · SKKU AI Hackathon</span><span class="project-period"><span class="period-label">Project Manager</span><time datetime="2025-10">Oct 2025</time></span></div>
       <h3>DrawMind: Gamified Art Therapy Platform for Mental Health Assessment</h3>
@@ -162,13 +193,13 @@
   <div class="section-heading"><h2 id="experience-title">Education &amp; Experience</h2></div>
   <div class="experience-grid">
     <div id="education"><h3 class="subheading">Education</h3><div class="timeline">
-      <article class="timeline-item"><time>2023.03 – 2027.08 (expected)</time><h3>B.S. in Computer Education<br>B.A. in Computational Statistics</h3><p>Sungkyunkwan University</p><p class="detail education-gpa">GPA: <strong>4.36/4.5</strong> (Computer Education) · <strong>4.43/4.5</strong> (Computational Statistics)</p><p class="detail">Computational Statistics is a self-designed transdisciplinary major<br><strong>Korean Presidential Science Scholarship</strong> (Top 0.06% nationwide)</p></article>
-      <article class="timeline-item"><time>2026.02</time><h3>AICOSS-THU Global Student Program</h3><p>Ulm University of Applied Sciences, Germany</p><p class="detail">Four-week program in data science, ML, and deep learning; team leader of the industry capstone with DASU</p></article>
+      <article class="timeline-item"><time>2023.03 – 2027.08 (expected)</time><h3>B.S. in Computer Education<br>B.A. in Computational Statistics</h3><p>Sungkyunkwan University</p><p class="detail">Computational Statistics is a self-designed transdisciplinary major</p><span class="org-logo org-logo--crest"><img src="images/skku.jpeg" alt="Sungkyunkwan University emblem" width="553" height="555" loading="lazy"></span></article>
+      <article class="timeline-item"><time>2026.02</time><h3>AICOSS-THU Global Student Program</h3><p>Ulm University of Applied Sciences, Germany</p><p class="detail">Four-week program in data science, ML, and deep learning; team leader of the industry capstone with DASU</p><span class="org-logo"><img src="images/THU.png" alt="Technische Hochschule Ulm" width="166" height="92" loading="lazy"></span></article>
+      <article class="timeline-item"><time>2020.03 – 2023.02</time><h3>Pohang Jecheol High School</h3><p>Pohang, Korea</p><span class="org-logo org-logo--crest"><img src="images/highschool.jpeg" alt="Pohang Jecheol High School crest" width="200" height="200" loading="lazy"></span></article>
     </div></div>
     <div><h3 class="subheading">Research experience</h3><div class="timeline">
-      <article class="timeline-item"><time>2026.07 – Present</time><h3>Research Assistant</h3><p>AI Profiler for Cyber Incident Analysis · National R&amp;D Project</p><p class="detail">Building an ATT&amp;CK/D3FEND-based knowledge base of attack and defense scenarios for RAG-driven incident profiling</p></article>
-      <article class="timeline-item"><time>2025.08 – Present</time><h3>Research Assistant</h3><p>Software Laboratory (SW Lab) · SKKU</p><p class="detail">Hybrid frameworks that combine efficient statistical models with LLM-based contextual reasoning</p></article>
-      <article class="timeline-item"><time>2025.01 – 2025.12</time><h3>Machine Learning Engineer</h3><p>Data Analysis Club DScover · SKKU</p><p class="detail">Built and evaluated supervised, unsupervised, and ensemble models in team data projects</p></article>
+      <article class="timeline-item"><time>2025.08 – Present</time><h3>Research Assistant</h3><p>Software Laboratory (SW Lab) · SKKU</p><p class="detail">Hybrid frameworks that combine efficient statistical models with LLM-based contextual reasoning</p><span class="org-logo"><img src="images/swLAB.png" alt="Software Laboratory, Sungkyunkwan University" width="169" height="71" loading="lazy"></span></article>
+      <article class="timeline-item"><time>2025.01 – 2025.12</time><h3>Machine Learning Engineer</h3><p>Data Analysis Club DScover · SKKU</p><p class="detail">Built and evaluated supervised, unsupervised, and ensemble models in team data projects</p><span class="org-logo"><img src="images/dscover.png" alt="DScover, the SKKU data analysis club" width="326" height="155" loading="lazy"></span></article>
     </div></div>
   </div>
 </section>
@@ -176,23 +207,23 @@
 <section class="section" id="honors-and-awards" aria-labelledby="honors-title">
   <div class="section-heading"><h2 id="honors-title">Honors &amp; Awards</h2></div>
   <ul class="honors-list">
-    <li><time datetime="2026-10">2026.10</time><span>Encouragement Prize · AI-EDU Next Class Hackathon</span><span class="institution">KOFAC</span></li>
-    <li><time datetime="2026-08">2026.08</time><span><strong>Gold Prize</strong> · AICOSS Industry-Academic Deep Learning Bootcamp Competition</span><span class="institution">AICOSS / UOS</span></li>
-    <li><time datetime="2026-08">2026.08</time><span><strong>Gold Prize</strong> · ANCHOR AI Launchpad Hackathon</span><span class="institution">SKKU ANCHOR</span></li>
-    <li><time datetime="2026-02">2026.02</time><span><strong>Grand Prize</strong> · AICOSS-THU Capstone Project with DASU</span><span class="institution">AICOSS-THU</span></li>
-    <li><time datetime="2025-10">2025.10</time><span><strong>Grand Prize</strong> · Korean Computer Education Assoc. Capstone &amp; AI Hackathon</span><span class="institution">KCCEA</span></li>
-    <li><time datetime="2025-10">2025.10</time><span><strong>Gold Prize</strong> · SKKU AI Hackathon</span><span class="institution">SKKU</span></li>
-    <li><time datetime="2025-08">2025.08</time><span>Silver Prize · SK mySUNI 4th AI Project</span><span class="institution">SK mySUNI</span></li>
-    <li><time datetime="2024-07">2024.07</time><span>Bronze Prize · 6th Inter-University Startup Camp</span><span class="institution">SKKU LINC 3.0</span></li>
-    <li><time datetime="2023-03">2023 –</time><span><strong>Korean Presidential Science Scholarship</strong> · Top 0.06% nationwide</span><span class="institution">KOSAF</span></li>
+    <li><time datetime="2026-10">2026.10</time><span><svg class="award-icon award-icon--bronze" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 3V2H6v1H2v3a5 5 0 0 0 4.2 4.94A6 6 0 0 0 11 14.92V18H8a1 1 0 0 0-1 1v2h10v-2a1 1 0 0 0-1-1h-3v-3.08A6 6 0 0 0 17.8 10 5 5 0 0 0 22 6V3h-4ZM4 6V5h2v3.83A3 3 0 0 1 4 6Zm16 0a3 3 0 0 1-2 2.83V5h2v1Z"/></svg>Encouragement Prize · AI-EDU Next Class Hackathon</span><span class="institution">KOFAC</span></li>
+    <li><time datetime="2026-08">2026.08</time><span><svg class="award-icon award-icon--gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 3V2H6v1H2v3a5 5 0 0 0 4.2 4.94A6 6 0 0 0 11 14.92V18H8a1 1 0 0 0-1 1v2h10v-2a1 1 0 0 0-1-1h-3v-3.08A6 6 0 0 0 17.8 10 5 5 0 0 0 22 6V3h-4ZM4 6V5h2v3.83A3 3 0 0 1 4 6Zm16 0a3 3 0 0 1-2 2.83V5h2v1Z"/></svg><strong>Gold Prize</strong> · AICOSS Industry-Academic Deep Learning Bootcamp Competition</span><span class="institution">AICOSS / UOS</span></li>
+    <li><time datetime="2026-08">2026.08</time><span><svg class="award-icon award-icon--gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 3V2H6v1H2v3a5 5 0 0 0 4.2 4.94A6 6 0 0 0 11 14.92V18H8a1 1 0 0 0-1 1v2h10v-2a1 1 0 0 0-1-1h-3v-3.08A6 6 0 0 0 17.8 10 5 5 0 0 0 22 6V3h-4ZM4 6V5h2v3.83A3 3 0 0 1 4 6Zm16 0a3 3 0 0 1-2 2.83V5h2v1Z"/></svg><strong>Gold Prize</strong> · ANCHOR AI Launchpad Hackathon</span><span class="institution">SKKU ANCHOR</span></li>
+    <li><time datetime="2026-02">2026.02</time><span><svg class="award-icon award-icon--gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 3V2H6v1H2v3a5 5 0 0 0 4.2 4.94A6 6 0 0 0 11 14.92V18H8a1 1 0 0 0-1 1v2h10v-2a1 1 0 0 0-1-1h-3v-3.08A6 6 0 0 0 17.8 10 5 5 0 0 0 22 6V3h-4ZM4 6V5h2v3.83A3 3 0 0 1 4 6Zm16 0a3 3 0 0 1-2 2.83V5h2v1Z"/></svg><strong>Grand Prize</strong> · AICOSS-THU Capstone Project with DASU</span><span class="institution">AICOSS-THU</span></li>
+    <li><time datetime="2025-10">2025.10</time><span><svg class="award-icon award-icon--gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 3V2H6v1H2v3a5 5 0 0 0 4.2 4.94A6 6 0 0 0 11 14.92V18H8a1 1 0 0 0-1 1v2h10v-2a1 1 0 0 0-1-1h-3v-3.08A6 6 0 0 0 17.8 10 5 5 0 0 0 22 6V3h-4ZM4 6V5h2v3.83A3 3 0 0 1 4 6Zm16 0a3 3 0 0 1-2 2.83V5h2v1Z"/></svg><strong>Grand Prize</strong> · Korean Computer Education Assoc. Capstone &amp; AI Hackathon</span><span class="institution">KCCEA</span></li>
+    <li><time datetime="2025-10">2025.10</time><span><svg class="award-icon award-icon--gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 3V2H6v1H2v3a5 5 0 0 0 4.2 4.94A6 6 0 0 0 11 14.92V18H8a1 1 0 0 0-1 1v2h10v-2a1 1 0 0 0-1-1h-3v-3.08A6 6 0 0 0 17.8 10 5 5 0 0 0 22 6V3h-4ZM4 6V5h2v3.83A3 3 0 0 1 4 6Zm16 0a3 3 0 0 1-2 2.83V5h2v1Z"/></svg><strong>Gold Prize</strong> · SKKU AI Hackathon</span><span class="institution">SKKU</span></li>
+    <li><time datetime="2025-08">2025.08</time><span><svg class="award-icon award-icon--silver" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 3V2H6v1H2v3a5 5 0 0 0 4.2 4.94A6 6 0 0 0 11 14.92V18H8a1 1 0 0 0-1 1v2h10v-2a1 1 0 0 0-1-1h-3v-3.08A6 6 0 0 0 17.8 10 5 5 0 0 0 22 6V3h-4ZM4 6V5h2v3.83A3 3 0 0 1 4 6Zm16 0a3 3 0 0 1-2 2.83V5h2v1Z"/></svg>Silver Prize · SK mySUNI 4th AI Project</span><span class="institution">SK mySUNI</span></li>
+    <li><time datetime="2024-07">2024.07</time><span><svg class="award-icon award-icon--bronze" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 3V2H6v1H2v3a5 5 0 0 0 4.2 4.94A6 6 0 0 0 11 14.92V18H8a1 1 0 0 0-1 1v2h10v-2a1 1 0 0 0-1-1h-3v-3.08A6 6 0 0 0 17.8 10 5 5 0 0 0 22 6V3h-4ZM4 6V5h2v3.83A3 3 0 0 1 4 6Zm16 0a3 3 0 0 1-2 2.83V5h2v1Z"/></svg>Bronze Prize · 6th Inter-University Startup Camp</span><span class="institution">SKKU LINC 3.0</span></li>
+    <li><time datetime="2023-03">2023 –</time><span><svg class="award-icon award-icon--star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.26 6.85.79-5.07 4.66 1.38 6.79L12 17.1l-6.06 3.4 1.38-6.79L2.25 9.05l6.85-.79L12 2Z"/></svg><strong>Korean Presidential Science Scholarship</strong> · Top 0.06% nationwide</span><span class="institution">KOSAF</span></li>
   </ul>
 </section>
 
 <section class="section" id="teaching-experience" aria-labelledby="teaching-title">
   <div class="section-heading"><h2 id="teaching-title">Teaching</h2></div>
   <div class="teaching"><div><strong>Teaching Assistant</strong><p>Data Analysis and AI Basics · about 505 students per term · Sungkyunkwan University</p></div><span class="teaching-period">Spring &amp; Fall 2026</span></div>
-  <div class="teaching"><div><strong>Teaching Assistant</strong><p>AI Basics &amp; Uses · about 600 students per term · Sungkyunkwan University</p></div><span class="teaching-period">Spring &amp; Fall 2025</span></div>
   <div class="teaching"><div><strong>Student Teacher</strong><p>Information Technology · Sunrin Internet High School</p></div><time>May 2026</time></div>
+  <div class="teaching"><div><strong>Teaching Assistant</strong><p>AI Basics &amp; Uses · about 600 students per term · Sungkyunkwan University</p></div><span class="teaching-period">Spring &amp; Fall 2025</span></div>
 </section>
 </main>
 <footer class="site-footer page-wrap"><span>© 2026 Juyoung Seo · Design adapted from <a href="https://rahyunjae.github.io/">Hyunjae Ra</a> and <a href="https://github.com/RayeRen/acad-homepage.github.io">AcadHomepage</a></span><span>Seoul, Korea · <a href="mailto:tjwndud04@g.skku.edu">Get in touch ↗</a></span><a href="#about-me">Back to top ↑</a></footer>

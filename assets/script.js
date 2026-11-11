@@ -75,4 +75,57 @@ function followOldAnchor() {
   if (oldAnchors[hash]) document.getElementById(oldAnchors[hash])?.scrollIntoView();
 }
 followOldAnchor(); window.addEventListener('hashchange', followOldAnchor);
+
+/* Image strips: frames sit side by side and slide horizontally. */
+const calm = window.matchMedia('(prefers-reduced-motion: reduce)');
+const makeStrip = strip => {
+  const frames = [...strip.querySelectorAll('img')];
+  if (frames.length < 2) return null;
+  let shown = 0;
+  const place = () => frames.forEach((frame, i) => {
+    frame.style.transform = 'translateX(' + ((i - shown) * 100) + '%)';
+  });
+  place();
+  return {
+    frames,
+    next: () => { shown = (shown + 1) % frames.length; place(); },
+    reset: () => { shown = 0; place(); }
+  };
+};
+
+/* Paper thumbnails holding more than one image advance on their own. */
+document.querySelectorAll('.paper-slides').forEach(strip => {
+  const deck = makeStrip(strip);
+  if (!deck) return;
+  let timer = null;
+  const stop = () => { clearInterval(timer); timer = null; };
+  const start = () => {
+    if (timer || calm.matches) return;
+    timer = setInterval(() => { if (!document.hidden) deck.next(); },
+      Number(strip.dataset.interval) || 4500);
+  };
+  start();
+  calm.addEventListener('change', () => { calm.matches ? stop() : start(); });
+  const card = strip.closest('.publication');
+  card?.addEventListener('mouseenter', stop);
+  card?.addEventListener('mouseleave', start);
+});
+
+/* Project decks page through their key slides while the pointer rests on them. */
+document.querySelectorAll('.deck-pages').forEach(strip => {
+  const deck = makeStrip(strip);
+  if (!deck) return;
+  const card = strip.closest('.deck');
+  let timer = null;
+  card.addEventListener('mouseenter', () => {
+    if (timer || calm.matches) return;
+    deck.next();
+    timer = setInterval(deck.next, 1400);
+  });
+  card.addEventListener('mouseleave', () => {
+    clearInterval(timer); timer = null;
+    deck.reset();
+  });
+});
+
 })();

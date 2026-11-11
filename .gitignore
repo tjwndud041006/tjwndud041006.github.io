@@ -1,0 +1,16 @@
+# Source figures kept locally; the web pages use the exported PNG/JPEG versions.
+images/*.pdf
+images/pakdd_real.png
+images/Caution Is Not Discrimination:.png
+
+# Scratch page used to compare portrait styles.
+portrait-preview.html
+
+# Anonymous submissions still under review: kept local, not published.
+projects/accurate-on-average-llm-tutors.pdf
+projects/incident-is-its-own-baseline.pdf
+projects/caution-is-not-discrimination.pdf
+projects/keeping-user-text-in-house.pdf
+
+# Full-resolution originals of the slide decks.
+projects/original/
