@@ -29,13 +29,9 @@ strong{font-weight:650}::selection{background:var(--selection);color:var(--ink)}
 .eyebrow:before{content:'';width:22px;height:2px;background:var(--accent)}
 .hero h1{font-size:42px;line-height:1.15;font-weight:800;letter-spacing:-1.7px;margin-bottom:9px}
 .affiliation{font-size:14px;color:var(--muted);margin-bottom:0}.affiliation a{color:var(--ink);font-weight:550}
-/* Compact panel for the two figures worth noticing at a glance. */
-.credentials{margin-top:11px;padding:9px 14px;border:1px solid var(--panel-border);border-left:3px solid var(--soft-border);border-radius:4px 9px 9px 4px;background:var(--soft-gradient)}
-.credentials p{font-size:12.5px;color:var(--muted);line-height:1.7}
-.credentials p + p{margin-top:2px}
-.credentials b{color:var(--accent);font-weight:800;font-variant-numeric:tabular-nums}
-.credentials strong{color:var(--ink);font-weight:700}
-.cred-key{font-size:9.5px;font-weight:700;letter-spacing:.7px;color:var(--accent);vertical-align:1px;margin-right:2px}
+.hero-gpa,.hero-award{font-size:12.5px;color:var(--muted);line-height:1.7}
+.hero-gpa{margin-top:8px}.hero-award{margin-top:2px}
+.hero-gpa strong,.hero-award strong{color:var(--ink);font-weight:700}
 .intro{grid-column:1/-1;max-width:none;margin-top:18px;font-size:14px;line-height:1.8}.intro p+p{margin-top:8px}.intro strong{font-weight:600;color:var(--ink)}
 .socials{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
 .social-link{font-size:12px;line-height:1.5;padding:8px 12px;display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:7px;color:var(--ink);background:var(--surface)}
@@ -149,7 +145,7 @@ html{scroll-padding-top:118px}.page-wrap{width:calc(100% - 38px)}
 .hero{padding:22px 0;grid-template-columns:92px minmax(0,1fr);gap:0 16px;align-items:center}
 .hero-copy{display:contents}.hero-title{grid-column:2;grid-row:1}
 .eyebrow{font-size:9px;letter-spacing:1.3px;margin-bottom:8px;gap:7px}.eyebrow:before{width:15px}
-.hero h1{font-size:clamp(26px,7.5vw,34px);letter-spacing:-1.4px}.affiliation{font-size:12px;margin-bottom:0;line-height:1.8}.credentials{margin-top:8px;padding:7px 11px}.credentials p{font-size:11px}
+.hero h1{font-size:clamp(26px,7.5vw,34px);letter-spacing:-1.4px}.affiliation{font-size:12px;margin-bottom:0;line-height:1.8}.hero-gpa,.hero-award{font-size:11px}.hero-gpa{margin-top:6px}
 .portrait{grid-column:1;grid-row:1;margin-top:0}.portrait-window{border-radius:12px}
 .intro{grid-column:1/-1;grid-row:3;margin-top:16px;font-size:13px}.socials{grid-column:1/-1;grid-row:2;margin-top:13px;gap:7px}.social-link{font-size:10.5px;padding:8px 9px}
 .research-topics{grid-row:4;padding-top:12px;gap:6px}.topic-label{width:100%;font-size:9px;margin-bottom:1px}.topic{font-size:10px;padding:4px 8px}
@@ -188,18 +184,10 @@ html{scroll-padding-top:118px}.page-wrap{width:calc(100% - 38px)}
 .deck:hover .deck-count{opacity:0}
 
 .site-header::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue-gradient)}
-.hero h1{width:fit-content}
-@supports ((background-clip:text) or (-webkit-background-clip:text)){
-  .hero h1{background-image:var(--title-gradient);background-clip:text;-webkit-background-clip:text;color:transparent}
-  .hero h1 .name-dot{color:inherit}
-}
 .section-heading h2::before,.eyebrow::before{background:var(--blue-gradient)}
 .domestic summary:hover{background:var(--soft-hover)}
 .domestic[open] summary{border-bottom:1px solid var(--panel-border)}
-@media(forced-colors:active){
-  .hero h1{background:none;color:CanvasText}
-  .hero h1 .name-dot{color:CanvasText}
-}
+
 
 .hero-copy{align-self:end}
 .profile-location{font-size:12px;color:var(--muted);white-space:nowrap}
