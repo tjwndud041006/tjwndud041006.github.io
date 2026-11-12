@@ -96,21 +96,4 @@ document.querySelectorAll('.paper-slides').forEach(strip => {
   card?.addEventListener('mouseleave', start);
 });
 
-/* Project decks page through their key slides while the pointer rests on them. */
-document.querySelectorAll('.deck-pages').forEach(strip => {
-  const deck = makeStrip(strip);
-  if (!deck) return;
-  const card = strip.closest('.deck');
-  let timer = null;
-  card.addEventListener('mouseenter', () => {
-    if (timer || calm.matches) return;
-    deck.next();
-    timer = setInterval(deck.next, 1400);
-  });
-  card.addEventListener('mouseleave', () => {
-    clearInterval(timer); timer = null;
-    deck.reset();
-  });
-});
-
 })();
