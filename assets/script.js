@@ -1,20 +1,5 @@
 (() => {
 'use strict';
-const root = document.documentElement;
-const toggle = document.querySelector('.theme-toggle');
-const update = () => {
-  const dark = root.dataset.theme === 'dark';
-  toggle.setAttribute('aria-pressed', String(dark));
-  toggle.setAttribute('aria-label', 'Switch to ' + (dark ? 'light' : 'dark') + ' theme');
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#14111d' : '#8a6cf0';
-};
-toggle.hidden = false;
-update();
-toggle.addEventListener('click', () => {
-  root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-  try { localStorage.setItem('juyoung-theme', root.dataset.theme); } catch (_) {}
-  update();
-});
 const newsButton = document.querySelector('.news-toggle');
 const olderNews = [...document.querySelectorAll('#news-list > li')].slice(3);
 if (newsButton && olderNews.length) {
